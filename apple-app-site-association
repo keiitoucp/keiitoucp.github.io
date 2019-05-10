@@ -8,6 +8,10 @@
             {
                 "appID": "J349XY2U25.com.nttdocomo.idmanagerTP.idep5",
                 "paths": [ "/conf/universal/*" ]
+            },
+            {
+                "appID": "J349XY2U25.com.nttdocomo.idmanagerTP.idep.LineSDKSample",
+                "paths": [ "/line-auth/*" ]
             }
         ]
     }
