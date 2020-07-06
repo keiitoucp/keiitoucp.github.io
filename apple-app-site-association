@@ -4,11 +4,11 @@
 	"details": [
             {
                 "appID": "J349XY2U25.com.nttdocomo.idmanagerTP.idep5.HelloUniversalLinks",
-                "paths": [ "/conf/universal/*" ]
+                "paths": [ "/conf/universal/hello1/*" ]
             },
             {
                 "appID": "J349XY2U25.com.example.DeviceID",
-                "paths": [ "/conf/universal/hello/*" ]
+                "paths": [ "/conf/universal/hello2/*" ]
             },
         ]
     }
