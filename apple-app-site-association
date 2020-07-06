@@ -10,6 +10,10 @@
                 "appID": "J349XY2U25.com.example.DeviceID4",
                 "paths": [ "/conf/universal/hello2/*" ]
             },
+            {
+                "appID": "6MS56VJNQJ.com.example.DeviceID4",
+                "paths": [ "/conf/universal/hello3/*" ]
+            },
         ]
     }
 }
