@@ -7,7 +7,7 @@
                 "paths": [ "/conf/universal/hello1/*" ]
             },
             {
-                "appID": "J349XY2U25.com.example.DeviceID",
+                "appID": "J349XY2U25.com.example.DeviceID4",
                 "paths": [ "/conf/universal/hello2/*" ]
             },
         ]
