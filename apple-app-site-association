@@ -1,8 +1,11 @@
 {
+    "webcredentials": {
+        "apps": [ "J349XY2U25.com.nttdocomo.idmanagerTP.idep" ]
+    },
     "applinks": {
         "apps": [],
         "details": {
-          "6MS56VJNQJ.com.gmail.kei0278.ito.UniversalLinks": {
+          "J349XY2U25.com.nttdocomo.idmanagerTP.idep5": {
             "paths":[ "/conf/universal/*" ]
           }
         }
