@@ -1,10 +1,15 @@
 {
     "applinks": {
         "apps": [],
-        "details": {
-          "6MS56VJNQJ.com.gmail.kei0278.ito.UniversalLinks": {
-            "paths":[ "/conf/universal/*" ]
-          }
-        }
+        "details": [
+            {
+                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.UniversalLinks",
+                "paths": [ "/conf/universal/*" ]
+            },
+             {
+                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.MyLineSDK",
+                "paths": [ "/line-auth/*" ]
+            }
+       ]
     }
 }
