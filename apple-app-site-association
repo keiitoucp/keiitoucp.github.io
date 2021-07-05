@@ -4,7 +4,7 @@
         "details": [
             {
                 "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.UniversalLinks",
-                "paths": [ "/conf/universal/*" ]
+                "paths": [ "/conf/universal-oidcsdk/*" ]
             },
              {
                 "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.MyLineSDK",
