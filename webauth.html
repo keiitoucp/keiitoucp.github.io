@@ -5,6 +5,8 @@ console.log("=== START ===")
 
 if (!window.PublicKeyCredential) {
     console.log("PublicKeyCredential not supported.")
+} else {
+    console.log("PublicKeyCredential supported.")
 }
 
 const isAvailable = await PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable();
