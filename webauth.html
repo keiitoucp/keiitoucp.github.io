@@ -14,11 +14,11 @@ const options = {
         rp: { name: "example.com"},
         user: {
             name: "john.appleseed@example.com",
-            id: userIdBuffer,
+            id: "aaaaaaaa",  // userIdBuffer,
             displayName: "John Appleseed"
         },
         publicKeyCredParams: [ { type: "public-key", alg: -7 } ],
-        challenge: challengeBuffer,
+        challenge: "bbbbbbbb",  // challengeBuffer,
         authenticatorSelection: { authenticatorAttachment: "platform" },
         attestation: "direct"
     }
