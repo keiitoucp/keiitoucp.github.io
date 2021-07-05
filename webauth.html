@@ -25,8 +25,11 @@ const options = {
 };
     
 console.log(options)
+
+const publicKeyCredential = await navigator.credentials.create(options)
     
-    
+console.log(publicKeyCredential)
+
 /*
 const isAvailable = await PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable();
 
