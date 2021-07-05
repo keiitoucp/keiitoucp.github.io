@@ -68,7 +68,7 @@ if (!window.PublicKeyCredential) {
     console.log("PublicKeyCredential supported.")
 }
     
-    test01();
+
 
     /*
 const options = {
@@ -109,9 +109,16 @@ if (isAvailable) {
 
 console.log("--- END ---")
 
+function buttonClick(){
+    alert('Click');
+}
+
 </script>
 </head>
 <body>
 <h1>WebAuthentication API 7</h1>
+
+<input type="button" value="button" onclick="buttonClick()">
+    
 </body>
 </html>
