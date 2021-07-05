@@ -3,17 +3,23 @@
 <script type="text/javascript">
 console.log("=== START ===")
 
-PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()
+const isAvailable = await PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()
 
-navigator.credentials.create()
+if (isAvailable) {
+    console.log("OK")
+} else {
+    console.log("NG")
+}
 
-navigator.credentials.get()
+//navigator.credentials.create()
+
+//navigator.credentials.get()
 
 console.log("--- END ---")
 
 </script>
 </head>
 <body>
-<h1>WebAuthentication API 004</h1>
+<h1>WebAuthentication API 005</h1>
 </body>
 </html>
