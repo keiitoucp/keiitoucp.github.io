@@ -9,6 +9,24 @@ if (!window.PublicKeyCredential) {
     console.log("PublicKeyCredential supported.")
 }
 
+const options = {
+    publicKey: {
+        rp: { name: "example.com"},
+        user: {
+            name: "john.appleseed@example.com",
+            id: userIdBuffer,
+            displayName: "John Appleseed"
+        },
+        publicKeyCredParams: [ { type: "public-key", alg: -7 } ],
+        challenge: challengeBuffer,
+        authenticatorSelection: { authenticatorAttachment: "platform" },
+        attestation: "direct"
+    }
+};
+    
+console.log(options)
+    
+    
 /*
 const isAvailable = await PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable();
 
