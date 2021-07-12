@@ -12,9 +12,53 @@ window.onload = function() {
     } else {
         s = "not supported.";
     }
-    message.innerHTML = "PublicKeyCredential " + s
+    messageArea.innerHTML = "PublicKeyCredential " + s
 
 };
+    
+    function addMessage(message) {
+        messageArea.innerHTML += "<br>" + message
+    }
+
+    function addMessageNoBR(message) {
+        messageArea.innerHTML += message
+    }
+
+    function test02() {
+        addMessage("navigator   : " + navigator)
+        addMessage("credentials : " + navigator.credentials)
+        addMessage("credentials : " + navigator.credentials)
+        
+        var publicKey = {
+            challenge: new Uint8Array([21,31,105]),
+            rp: { name: "ACME Corporation" },
+            user : {
+                id: Uint8Array.from(window.atob("MIIBkzCCATigAwIBAjCCAZMwggE4oAMCAQIwggGTMII="), c=>c.charCodeAt(0)),
+                name: "alex.mueller@example.com",
+                displayName : "Alex Mueller",
+            },
+            pubKeyCredParams: [
+                {
+                    type: "public-key",
+                    alg: -7
+                }
+            ],
+        }
+
+        addMessageNoBR("<h4>publicKey   : " + publicKey + "</h4>")
+        addMessageNoBR("challenge   : " + publicKey.challenge)
+//        addMessage("rp.name          : " + publicKey.rp.name)
+
+        //
+        navigator.credentials.create ({publicKey})
+        .then ( function (newCredentialInfo) {
+            addMessage("*1*");
+        }).catch( function (err) {
+            addMessage("err : " + err);
+
+        });
+    }
+    
     
 function test01() {
     console.log("=== START test01 ===");
@@ -120,7 +164,7 @@ console.log("--- END ---")
 
 function doRegistration(){
     //alert('Click');
-    test01();
+    test02();
 }
 
 </script>
@@ -131,7 +175,7 @@ function doRegistration(){
 <input type="button" value="Registration" onclick="doRegistration()">
 
 <h2>Log</h2>
-<div id=message>
+<div id=messageArea>
 Hello
 </div>
     
