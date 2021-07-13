@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript">
+function doRegistration() {
+    var publicKey = {
+        challenge: new Uint8Array([21,31,105]),
+        pubKeyCredParams: [
+            {
+                type: "public-key",
+                alg: -7
+            }
+        ],
+        rp: { name: "ACME Corporation" },
+        user: {
+            name: "alex.mueller@example.com",
+            displayName : "Alex Mueller",
+            id: Uint8Array.from(window.atob("MIIBkzCCATigAwIBAjCCAZMwggE4oAMCAQIwggGTMII="), c=>c.charCodeAt(0)),
+        }
+    }
+    
+    navigator.credentials.create ({publicKey})
+    .then ( function (newCredentialInfo) {
+        console.log("OK")
+    }).catch( function (err) {
+        console.log(err)
+    });
+}
+</script>
+</head>
+<body>
+<h1>WebAuthentication API</h1>
+<input type="button" value="Registration" onclick="doRegistration()">
+</body>
+</html>
