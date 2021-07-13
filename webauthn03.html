@@ -41,9 +41,10 @@
 
         navigator.credentials.create ({publicKey})
         .then ( function (newCredentialInfo) {
+            addMessage("");
             addMessage("=== create completion START ===")
             addMessage("newCredentialInfo : " + newCredentialInfo)
-            addMessage("  id : " + newCredentialInfo.id)
+            dumpPublicKeyCredential(newCredentialInfo)
             addMessage("--- create completion END ---")
         }).catch( function (err) {
             addMessage("err : " + err);
@@ -52,6 +53,26 @@
 
         
         addMessage("--- test02 END ---")
+    }
+    
+    function dumpPublicKeyCredential(credential) {
+        addMessage("  id    : " + credential.id);
+        addMessage("  rawId : " + credential.rawId);
+//      addMessage("          " + buffer_to_string(credential.rawId));
+        addMessage("  type  : " + credential.type);
+        addMessage("  discovery                : " + credential.discovery);
+        addMessage("  identifier               : " + credential.identifier);
+        addMessage("  clientExtensionsResults  : " + credential.clientExtensionsResults);
+
+        var response = credential.response;
+        addMessage("  response : " + response);
+        addMessage("    clientDataJSON    : " + response.clientDataJSON);
+        addMessage("    attestationObject : " + response.attestationObject);
+        addMessage("    transports        : " + response.transports);
+    }
+    
+    function buffer_to_string(buf) {
+      return String.fromCharCode.apply("", new Uint16Array(buf))
     }
     
     function doRegistration(){
@@ -67,11 +88,12 @@
 <input type="button" value="Registration" onclick="doRegistration()">
 
 <h3>Log</h3>
-<tt>
-<div id=messageArea>
+
+<pre>
+<div id=messageArea style="font-family:monospace">
 </div>
-</tt>
-    
+</pre>
+
 </body>
 </html>
 
