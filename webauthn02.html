@@ -47,12 +47,14 @@ window.onload = function() {
 
         addMessageNoBR("<h4>publicKey   : " + publicKey + "</h4>")
         addMessageNoBR("challenge   : " + publicKey.challenge)
-//        addMessage("rp.name          : " + publicKey.rp.name)
+        addMessage("rp.name          : " + publicKey.rp.name)
 
         //
         navigator.credentials.create ({publicKey})
         .then ( function (newCredentialInfo) {
             addMessage("*1*");
+            addMessage("newCredentialInfo : " + newCredentialInfo)
+            addMessage("  id : " + newCredentialInfo.id)
         }).catch( function (err) {
             addMessage("err : " + err);
 
