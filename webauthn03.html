@@ -1,0 +1,78 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript">
+    window.onload = function() {
+        var s = window.PublicKeyCredential ? "supported" : "not supported"
+        messageArea.innerHTML = "PublicKeyCredential " + s + "."
+        
+        addMessage("navigator   : " + navigator)
+        addMessage("credentials : " + navigator.credentials)
+        addMessage("")
+
+    };
+    
+    function addMessage(message, nobr) {
+        if (!nobr) messageArea.innerHTML += "<br>"
+        messageArea.innerHTML += message
+    }
+
+    function test02() {
+        addMessage("=== test02 START ===")
+        
+        var publicKey = {
+            challenge: new Uint8Array([21,31,105]),
+            pubKeyCredParams: [
+                {
+                    type: "public-key",
+                    alg: -7
+                }
+            ],
+            rp: { name: "ACME Corporation" },
+            user: {
+                name: "alex.mueller@example.com",
+                displayName : "Alex Mueller",
+                id: Uint8Array.from(window.atob("MIIBkzCCATigAwIBAjCCAZMwggE4oAMCAQIwggGTMII="), c=>c.charCodeAt(0)),
+            }
+        }
+        
+        addMessage("publicKey : " + publicKey)
+
+        navigator.credentials.create ({publicKey})
+        .then ( function (newCredentialInfo) {
+            addMessage("=== create completion START ===")
+            addMessage("newCredentialInfo : " + newCredentialInfo)
+            addMessage("  id : " + newCredentialInfo.id)
+            addMessage("--- create completion END ---")
+        }).catch( function (err) {
+            addMessage("err : " + err);
+
+        });
+
+        
+        addMessage("--- test02 END ---")
+    }
+    
+    function doRegistration(){
+        test02();
+    }
+
+</script>
+</head>
+
+<body>
+<h1>WebAuthentication API 03</h1>
+
+<input type="button" value="Registration" onclick="doRegistration()">
+
+<h3>Log</h3>
+<tt>
+<div id=messageArea>
+</div>
+</tt>
+    
+</body>
+</html>
+
+    
