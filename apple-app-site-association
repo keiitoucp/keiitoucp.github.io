@@ -13,7 +13,8 @@
        ]
     },
     "webcredentials": {
-        "apps": ["6MS56VJNQJ.com.gmail.kei0278.ito.MyPaskeys",
+        "apps": ["6MS56VJNQJ.com.gmail.kei0278.ito.AutoFill",
+                 "6MS56VJNQJ.com.gmail.kei0278.ito.MyPaskeys",
                  "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.MyPasskeys",
                  "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.MyShiny"
                 ]
