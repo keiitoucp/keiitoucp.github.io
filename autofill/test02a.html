@@ -6,15 +6,25 @@
 <script type="text/javascript">
 function openInputDev()
 {
-    console.log("Hello")
+    console.log("openInputDev")
     var inputDevArea1 = document.getElementById('dn');
     
     if(document.getElementById('cb').checked){
+        console.log("*1*")
         inputDevArea1.style.display = '';
     }else{
+        console.log("*2*")
         inputDevArea1.style.display = 'none';
     }
 }
+
+<!--window.onload = function() {-->
+<!--    console.log("onload")-->
+<!--    var inputDevArea1 = document.getElementById('dn');-->
+<!--    inputDevArea1.style.display = 'none';-->
+<!--    inputDevArea1.style.display = '';-->
+<!--};-->
+    
 </script>
 </head>
 <body>
@@ -25,17 +35,15 @@ function openInputDev()
 <input id="password-text-field" type="password" autocomplete="off">
 
 <br><br>
-ワンタイムコード<br>
+セキュリティコード<br>
 <input id="single-factor-code-text-field" type="text" autocomplete="off">
 
 <br><br>
-<label onclick="openInputDev();"><input type="checkbox" id="cb" name="deviceflg" class="mgRight5" value="1"/>信頼できる端末(ブラウザ等)として登録する</label><br>
-<input type="text" name="devicename" value="iPhone_Safari" autocomplete="off" style="display:none" id="dn"/>
+<label onclick="openInputDev();"><input type="checkbox" id="cb" name="deviceflg" class="mgRight5" value="1" />信頼できる端末(ブラウザ等)として登録する</label>
+<input type="text" name="devicename" value="iPhone_Safari" autocomplete="off" id="dn" style="display:none">
 
 <br><br><br>
-<a href="test01.html">Login</a>
+<a href="test01.html">ログイン</a>
 
 </body>
 </html>
-
-
