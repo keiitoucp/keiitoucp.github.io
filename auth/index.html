@@ -11,38 +11,49 @@
 //    alert('Hello2');
 //}
 
-function sayHi() {
-  document.location = "exampleauth://auth?token=12345";
-}
+window.onload = function() {
+  //  document.location = "https://www.google.com/";
+    //document.location = "https://keiitoucp.github.io/conf/universal/hello1/test2.html";
+};
+
+//function sayHi() {
+  //document.location = "exampleauth://auth?token=12345";
+//  document.location = "https://keiitoucp.github.io/conf/universal/hello1/test2.html";
+  
+//  var aaa = document.getElementById('submitButton');
+//  aaa.click()
+//}
 
 //setTimeout(sayHi, 2000);
 
-function hello() {
-    // 例)2秒スリープさせる
-    const d1 = new Date();
-    while (true) {
-      const d2 = new Date();
-      if (d2 - d1 > 5000) {
-        break;
-      }
-    }
-
-    alert('Hello3');;
-//    document.location = "exampleauth://auth?token=12345";
-
-
-}
 </script>
 
 </head>
 <body>
-<h1>LogIn</h1>
+<h1>LogIn 0819</h1>
 
 <form action="test1.html" autocomplete="off">
 <input id="userID" type="text"> UserID<br>
 <input id="password" type="password"> Password<br><br>
-<input type=submit>
+<input id="submitButton" type=submit>
 </form>
+
+<br><br>
+<form action="https://keiitoucp.github.io/conf/universal/hello1/test2.html" autocomplete="off">
+<input id="userID" type="text"> UserID<br>
+<input id="password" type="password"> Password<br><br>
+<input id="submitButton" type=submit>
+</form>
+
+<br><br>
+<form action="http://keiichinoimac.local/old_folder/aa333" autocomplete="off">
+<input id="userID" type="text"> UserID<br>
+<input id="password" type="password"> Password<br><br>
+<input id="submitButton" type=submit>
+</form>
+
+
+<a href="http://keiichinoimac.local/old_folder/aa444">UniversalLinks へ</a>
 
 </body>
 </html>
