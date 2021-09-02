@@ -8,14 +8,7 @@
 
 <script type="text/javascript">
 window.onload = function() {
-    //document.location = "https://keiitoucp.github.io/conf/universal/app0/";
-    
     document.getElementById("ulButton").click();
-    
-}
-
-function doHello() {
-    alert('Hello');
 }
 
 function doUniversalLinks() {
@@ -33,11 +26,9 @@ function doUniversalLinks_self() {
 <body>
 <h1>Main</h1>
 
-<input type=button id="helloButton" value="Hello" onclick="doHello()">
+<input type=button id="ulButton" value="UnviersalLinks 同ドメイン" onclick="doUniversalLinks()">
 <br><br>
-<input type=button id="ulButton" value="UnviersalLinks" onclick="doUniversalLinks()">
-<br><br>
-<input type=button id="ulSelfButton" value="UnviersalLinks-self" onclick="doUniversalLinks_self()">
+<input type=button id="ulSelfButton" value="UnviersalLinks-self 同ドメイン" onclick="doUniversalLinks_self()">
 
 </body>
 </html>
