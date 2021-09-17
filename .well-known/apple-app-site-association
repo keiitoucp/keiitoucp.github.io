@@ -3,7 +3,15 @@
         "apps": [],
         "details": [
             {
-                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULMarker2",
+                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULMyApp1",
+                "paths": [ "/conf/universal/myapp1/*" ]
+            },
+            {
+                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULMyApp2",
+                "paths": [ "/conf/universal/myapp2/*" ]
+            },
+            {
+                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULMarker1",
                 "paths": [ "/conf/universal/marker/*" ]
             }
        ]
