@@ -8,7 +8,7 @@
             },
             {
                 "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULTestB01",
-                "paths": [ "/conf/universal/sss/" ]
+                "paths": [ "/conf/universal/sss/", "/conf/universal/sss2/" ]
             },
             {
                 "appID": "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.ULMyApp1",
