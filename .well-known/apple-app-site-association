@@ -3,6 +3,14 @@
         "apps": [],
         "details": [
             {
+                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULTestA01",
+                "paths": [ "/conf/universal/a0415/*" ]
+            },
+            {
+                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULTestB01",
+                "paths": [ "/conf/universal/sss/" ]
+            },
+            {
                 "appID": "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.ULMyApp1",
                 "paths": [ "/conf/universal/myapp1/*" ]
             },
