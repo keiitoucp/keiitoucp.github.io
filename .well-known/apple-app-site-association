@@ -3,16 +3,12 @@
         "apps": [],
         "details": [
             {
-                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULLandmark01",
+                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULLandmark02",
                 "paths": [ "/conf/universal/landmark/*" ]
             },
             {
-                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULTestA02",
-                "paths": [ "/conf/universal/a0415/*" ]
-            },
-            {
-                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULTestB01",
-                "paths": [ "/conf/universal/sss/", "/conf/universal/sss2/" ]
+                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULTestA01",
+                "paths": [ "/conf/universal/sss/" ]
             },
             {
                 "appID": "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.ULMyApp1",
