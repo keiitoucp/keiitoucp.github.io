@@ -3,12 +3,14 @@
         "apps": [],
         "details": [
             {
-                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULLandmark01",
+                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULLandmark02",
                 "paths": [ "/conf/universal/landmark/*" ]
             },
             {
                 "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULBankApp",
-                "paths": [ "/bankapp", "/bankapp_daa1" ]
+                "paths": [ "/bankapp", 
+                           "/bankapp_daa1" 
+                         ]
             },
             {
                 "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULTestA01",
