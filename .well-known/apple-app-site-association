@@ -8,11 +8,7 @@
             },
             {
                 "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULBankApp",
-                "paths": [ "/bankapp_daa1" ]
-            },
-            {
-                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULBankApp",
-                "paths": [ "/bankapp" ]
+                "paths": [ "/bankapp", "/bankapp_daa1" ]
             },
             {
                 "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULTestA01",
