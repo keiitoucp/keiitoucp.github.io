@@ -1,0 +1,16 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULLandmark01",
+                "paths": [ "/conf/universal/landmark/*" ]
+            }
+    },
+    "webcredentials": {
+        "apps": [
+                 "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.MyPasskeys",
+                 "J349XY2U25.com.example.apple-samplecode.ShinyJ349XY2U25"
+                ]
+    }
+}
