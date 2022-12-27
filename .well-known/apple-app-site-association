@@ -3,8 +3,12 @@
         "apps": [],
         "details": [
             {
-                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULLandmark02",
+                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULLandmark01",
                 "paths": [ "/conf/universal/landmark/*" ]
+            },
+            {
+                "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULTest20221227",
+                "paths": [ "/sss" ]
             }
         ]
     },
