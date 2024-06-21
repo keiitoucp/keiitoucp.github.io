@@ -3,6 +3,14 @@
         "apps": [],
         "details": [
             {
+                "appID": "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.DstApp01",
+                "paths": [ "/conf/universal/testrf/dstapp/*" ]
+            },
+            {
+                "appID": "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.SrcApp",
+                "paths": [ "/conf/universal/testrf/srcapp/*" ]
+            },
+            {
                 "appID": "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.ASWebNew",
                 "paths": [ "/conf/universal/app0/*" ]
             },
@@ -18,6 +26,9 @@
     },
     "webcredentials": {
         "apps": [
+                 "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.DstApp01",
+                 "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.DstApp02",
+                 "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.SrcApp",
                  "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.ASWebNew",
                  "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.MyPasskeys",
                  "J349XY2U25.com.example.apple-samplecode.ShinyJ349XY2U25",
