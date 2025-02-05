@@ -26,13 +26,7 @@
     },
     "webcredentials": {
         "apps": [
-                 "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.DstApp01",
-                 "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.DstApp02",
-                 "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.SrcApp",
-                 "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.ASWebNew",
-                 "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.*",
-                 "J349XY2U25.com.example.apple-samplecode.ShinyJ349XY2U25",
-                 "6MS56VJNQJ.com.example.apple-samplecode.Shiny6MS56VJNQJ"
+                 "J349XY2U25.*
                 ]
     }
 }
