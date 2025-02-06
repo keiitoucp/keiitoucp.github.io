@@ -30,8 +30,10 @@
     },
     "webcredentials": {
         "apps": [
+                 "J349XY2U25.com.*",
                  "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.*",
-                 "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.MyPasskey2"
+                 "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.MyPasskeys*",
+                 "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.MyPasskeys2"
                 ]
     }
 }
