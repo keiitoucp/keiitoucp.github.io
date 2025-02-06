@@ -15,10 +15,6 @@
                 "paths": [ "/conf/universal/app0/*" ]
             },
             {
-                "appID": "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.MyPasskeys2",
-                "paths": [ "/conf/universal/app1/*" ]
-            },
-            {
                 "appID": "6MS56VJNQJ.com.gmail.kei0278.ito.ULLandmark01",
                 "paths": [ "/conf/universal/landmark/*" ]
             },
@@ -30,7 +26,7 @@
     },
     "webcredentials": {
         "apps": [
-                 "J349XY2U25.com.*",
+                 "J349XY2U25.*",
                  "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.*",
                  "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.MyPasskeys*",
                  "J349XY2U25.com.nttdocomo.idmanagerTP.idep2.MyPasskeys2"
